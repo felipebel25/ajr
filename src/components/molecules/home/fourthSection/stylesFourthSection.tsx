@@ -3,12 +3,12 @@ export const styles = {
         backgroundColor: 'primary.main',
         width: "100%",
         height: { xs: "auto", md: "70vh" },
-        padding: {md:"2% 20%", xl:'2% 25%'},
+        padding: { md: "2% 16%", xl: '2% 25%' },
         display: "flex",
         alignItems: "center",
         flexDirection: { xs: "column", md: "row" },
         justifyContent: { xs: "center", md: "flex-end" },
-        mb:"4%"
+        mb: "4%"
     },
     imageContainer: {
         width: "auto",
@@ -25,7 +25,7 @@ export const styles = {
         padding: "2% 0%"
     },
     textContainerTitle: {
-        fontSize: "3.1rem",
+        fontSize: { xs: "2.5rem", xl: "3.1rem" },
         fontWeight: 600,
     },
     subtitle: {

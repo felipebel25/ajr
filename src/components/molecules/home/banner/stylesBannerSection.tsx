@@ -6,14 +6,13 @@ export const styles = {
         height: { xs: "auto", md: "93vh" },
         minHeight: "450px",
         width: "100%",
-        backgroundImage: 'linear-gradient(180.16deg, #0982B6 17.63%, #0F3A5A 99.86%)'
-        // backgroundSize: "cover",
-        // backgroundImage: "radial-gradient(circle, rgb(0 0 0 / 55%) 0%, rgb(46 46 46) 5%),url(/images/home/background-metal.jpg)",
-        // backgroundBlendMode: 'overlay',
-        // mixBlendMode: 'overlay',
-        // // background: 'radial-gradient(circle, rgba(167,176,209,0.5284488795518207) 0%, rgba(87,94,118,0) 35%)',
-        // //  background: 'radial-gradient(circle, rgba(167,176,209,1) 0%, rgba(87,94,118,0) 15%)',
-        // backgroundRepeat: "no-repeat"
+        backgroundImage: "url(/images/home/background_banner.png)",
+        backgroundSize: "cover",
+        backgroundBlendMode: 'overlay',
+        mixBlendMode: 'overlay',
+        //   background: 'radial-gradient(circle, rgba(167,176,209,0.5284488795518207) 0%, rgba(87,94,118,0) 35%)',
+        //    background: 'radial-gradient(circle, rgba(167,176,209,1) 0%, rgba(87,94,118,0) 15%)',
+        backgroundRepeat: "no-repeat"
     },
     containerFirstSection: {
         height: "100%",
@@ -48,9 +47,15 @@ export const styles = {
         // border:'1px solid red',
     },
     containerImage: {
-        width: { xs: "100%", md: "45.3%" },
-        height: "auto",
+        width: { xs: "100%", md: "auto" },
+        height: "100%",
         mt: { xs: '2%' },
     },
+    button: {
+        '&:hover': {
+            backgroundColor: "primary.main",
+            opacity: "0.8"
+        }
+    }
 
 }

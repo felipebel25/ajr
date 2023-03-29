@@ -1,4 +1,5 @@
 import { HomeView } from '@/components/organisms/home/home/HomeView'
+import { Box } from '@mui/material'
 import Head from 'next/head'
 
 
@@ -12,7 +13,7 @@ export default function HomePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HomeView />
-      
+
 
     </>
   )

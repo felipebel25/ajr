@@ -15,7 +15,6 @@ export const FourthSection = () => {
           width={848}
           height={836}
         />
-
       </Box>
       <Box sx={styles.counterContainer}>
         <Box sx={styles.whiteStep} >

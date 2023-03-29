@@ -38,7 +38,7 @@ export const lightTheme = createTheme({
         },
       }
     },
-
+  
     MuiTypography: {
       styleOverrides: {
         root: {

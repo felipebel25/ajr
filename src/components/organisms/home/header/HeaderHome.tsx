@@ -6,7 +6,7 @@ import { LinkHeader } from "@/components/atoms/linkHeader/LinkHeader"
 import { MenuOutlined } from "@mui/icons-material"
 import { styles } from "./stylesHeaderHome"
 import { useRouter } from "next/router"
-import { MouseEvent, useState } from "react"
+import { MouseEvent, useCallback, useEffect, useState } from "react"
 import { navigateToPublicUrl } from "@/utils/globalUtils"
 
 
@@ -24,10 +24,15 @@ export const HeaderHome = () => {
         setAnchorEl(null);
         navigateToPublicUrl(url)
     };
+    const trigger = useScrollTrigger({
+        disableHysteresis: true,
+        threshold: 0,
+    });
+
 
 
     return (
-        <Box component={'header'} sx={{ ...styles.header }} >
+        <Box component={'header'} sx={trigger ? styles.headerScroll : styles.header} >
             {/* ----------------Logo Icon----------------- */}
             <Box sx={styles.logoAjr}>
                 <Image

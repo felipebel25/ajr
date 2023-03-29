@@ -13,6 +13,9 @@ export const styles = {
         textAlign: 'center',
         flexDirection: "column",
         padding: "4% 2%",
+        '&:hover': {
+            boxShadow: '0px 5px 5px rgba(0,0,0,0.08)'
+        }
     },
     text: {
         color: "info.contrastText",

@@ -6,10 +6,13 @@ export const styles = {
         textAlign: "center",
         padding: "5% 7%",
     },
+    title: {
+        fontSize: { xs: "2.8rem", xl: "3.6rem" }
+    },
     text: {
         margin: "2% auto",
         width: "57%",
-        fontSize: "1.8rem",
+        fontSize:  { xs: "1.6rem", xl: "1.8rem" },
         justifyContent: 'flex-start',
     }
 

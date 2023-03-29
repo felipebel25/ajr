@@ -5,7 +5,11 @@ export const styles = {
         backgroundColor: "#F6FDFF",
         m: '2% 0',
         maxWidth: { md: "370px", xl: "550px" },
-        p: '2% 0'
+        p: '2% 0',
+        cursor: "pointer",
+        '&:hover': {
+            boxShadow: '0px 5px 5px rgba(0,0,0,0.08)'
+        }
     },
     cardHeader: {
         display: "flex",
@@ -35,6 +39,7 @@ export const styles = {
     listItem: {
         color: "info.main",
         display: 'list-item',
+        padding: "0",
         listStyleType: 'disc',
         '&::marker': {
             color: "secondary.main",

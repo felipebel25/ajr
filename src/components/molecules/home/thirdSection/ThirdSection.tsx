@@ -5,7 +5,7 @@ import { styles } from "./stylesThirdSection"
 export const ThirdSection = () => {
     return (
         <Box sx={styles.main}>
-            <Typography variant="h3" component='h3'>Here’s How We Help You <br />
+            <Typography variant="h3" component='h3' sx={styles.title}>Here’s How We Help You <br />
                 Get Your Life Back</Typography>
             <Typography sx={styles.text}>The IRS is a financial juggernaut that doesn’t care about the people behind the financial struggles; they simply want their money. At AJR Accounting & Associates LLC, we help shield our clients from this overbearing government agency to help them overcome financial hurdles and stressful times with years of hands-on tax experience! <br />
 

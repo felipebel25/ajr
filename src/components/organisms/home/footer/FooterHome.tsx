@@ -15,35 +15,35 @@ export const FooterHome = () => {
                     <Image
                         alt="QR Code, qrcode, qr, custom qr, qrcustom, codeqr"
                         quality={100}
-                        // style={styles.imgCard}
-                        src='/images/svg/logo.svg'
+                        style={{width:'25%', height:'100%'}}
+                        src='/images/ajr_logo.png'
                         width={172}
                         height={40}
                     />
                 </Box>
                 <Box sx={styles.containerContacts}>
                     <Box sx={styles.contactSectionContact}>
-                        <Typography sx={styles.contactTitle}>Links</Typography>
-                            <Typography sx={styles.contactLinks} onClick={() => navigateToPublicUrl('https://shop.sam-green.com/terms-of-service/')} >Terms of service</Typography>
-                            <Typography sx={styles.contactLinks} onClick={() => navigateToPublicUrl('https://shop.sam-green.com/privacy-policies/')}>Privacy policies</Typography>
+                        <Typography sx={styles.contactTitle}>Home</Typography>
+
                     </Box>
                     <Box sx={styles.contactSectionContact}>
-                        <Typography sx={styles.contactTitle}>Phone</Typography>
-                        <Typography sx={styles.contactLinks} onClick={() => navigateToPublicUrl('tel:19294133080')} >+(1) 929 413 30 80</Typography>
+                        <Typography sx={styles.contactTitle}>Services</Typography>
                     </Box>
                     <Box sx={styles.contactSectionContact}>
-                        <Typography sx={styles.contactTitle}>Email</Typography>
-                        <Typography sx={styles.contactLinks} onClick={() => navigateToPublicUrl('https://outlook.office.com/mail/deeplink/compose?mailtouri=mailto%3Ainfo%40samgreen.com')} >Hello@samgreen.com</Typography>
+                        <Typography sx={styles.contactTitle}>About Us</Typography>
+                    </Box>
+                    <Box sx={styles.contactSectionContact}>
+                        <Typography sx={styles.contactTitle}>Contact Us</Typography>
                     </Box>
                 </Box>
             </Box>
             <Box sx={styles.contactSocialLinks}>
                 <Box>
-                    <Typography>All rights reserved Samgreen® {year.getFullYear()}</Typography>
+                    <Typography>All rights reserved Accounting & Associates LLC® {year.getFullYear()}</Typography>
                 </Box>
                 <Box sx={styles.containerIconsSocialLinks}>
                     <InstagramIcon onClick={() => navigateToPublicUrl('https://www.instagram.com/samgreencorp/')} sx={styles.iconSocialLink} />
-                    <FacebookIcon onClick={() => navigateToPublicUrl('https://www.facebook.com/samgreencorp')}  sx={styles.iconSocialLink} />
+                    <FacebookIcon onClick={() => navigateToPublicUrl('https://www.facebook.com/samgreencorp')} sx={styles.iconSocialLink} />
                 </Box>
             </Box>
 

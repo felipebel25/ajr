@@ -3,7 +3,7 @@ import { fonts } from "@/themes/fonts";
 export const styles = {
     main: {
         height: { xs: "75%", md: "28vh" },
-        backgroundColor: 'primary.dark',
+        backgroundColor: 'secondary.dark',
         padding: "1% 5%",
         paddingTop: "2%",
     },
@@ -17,37 +17,32 @@ export const styles = {
 
     },
     contactSectionImage: {
-        width: "50%"
+        width: "60%",
+        height: "50%",
+
     },
     contactSectionContact: {
-        width: "50%"
+        width: "fit-content",
+        textAlign: "right",
+        color: "primary.main",
     },
     contactTitle: {
         fontSize: "1.6rem",
         fontWeight: 500,
-        marginBottom: '5%'
-
-    },
-    contactLinks: {
-        fontSize: "1.4rem",
-        fontWeight: 400,
-        fontFamily: fonts.secondary,
-        marginBottom: { xs: "5.5%", md: "3%" },
-        width: { md: "fit-content" },
+        marginBottom: '5%',
         cursor: "pointer",
-        '&:hover': {
-            opacity: "0.8"
+        '&:hover':{
+            opacity:"0.7"
         }
-
     },
     optionContactLink: {
-        border: "1px solid red",
         width: 'auto',
     },
     containerContacts: {
-        width: { xs: "90%", md: "50%" },
+        width: { xs: "90%", md: "40%" },
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
+        justifyContent: { xs: "center", md: "space-between" },
         alignItems: { xs: "center", md: "flex-start" },
         textAlign: { xs: "center", md: "left" }
 
@@ -55,6 +50,7 @@ export const styles = {
     contactSocialLinks: {
         display: "flex",
         width: "100%",
+        color: "primary.main",
         height: "30%",
         justifyContent: { xs: "center", md: "space-between" },
         alignItems: "center",
