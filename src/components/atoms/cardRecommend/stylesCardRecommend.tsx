@@ -1,6 +1,6 @@
 export const styles = {
     main: {
-        width: { xs: "90%", md: "30%", xl: "25%" },
+        width: { xs: "95%", md: "30%", xl: "25%" },
         height: { xs: "100%", xl: "90%" },
         maxWidth: "400px",
         maxHeight: "330px",
@@ -13,6 +13,7 @@ export const styles = {
         textAlign: 'center',
         flexDirection: "column",
         padding: "4% 2%",
+        m: { xs: "3% auto", sm: "0" },
         '&:hover': {
             boxShadow: '0px 5px 5px rgba(0,0,0,0.08)'
         }

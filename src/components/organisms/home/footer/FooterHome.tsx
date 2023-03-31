@@ -1,12 +1,12 @@
 import { navigateToPublicUrl } from "@/utils/globalUtils"
-import { Box, SvgIcon, Typography } from "@mui/material"
+import { Box, Theme, Typography, useMediaQuery } from "@mui/material"
 import Image from "next/image"
-import Link from "next/link"
 import { FacebookIcon, InstagramIcon, TwitterIcon } from "../../../../../public/images/svg/components"
 import { styles } from "./stylesFooterHome"
 
 export const FooterHome = () => {
     const year = new Date()
+    const isSmallScreen = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
 
     return (
         <Box component='footer' sx={styles.main}>
@@ -15,7 +15,7 @@ export const FooterHome = () => {
                     <Image
                         alt="QR Code, qrcode, qr, custom qr, qrcustom, codeqr"
                         quality={100}
-                        style={{width:'25%', height:'100%'}}
+                        style={!isSmallScreen ? { width: '25%', height: '100%' } : { width: '100%', height: '100%' }  }
                         src='/images/ajr_logo.png'
                         width={172}
                         height={40}
@@ -39,7 +39,7 @@ export const FooterHome = () => {
             </Box>
             <Box sx={styles.contactSocialLinks}>
                 <Box>
-                    <Typography>All rights reserved Accounting & Associates LLC® {year.getFullYear()}</Typography>
+                    <Typography>Accounting & Associates LLC® {year.getFullYear()}</Typography>
                 </Box>
                 <Box sx={styles.containerIconsSocialLinks}>
                     <InstagramIcon onClick={() => navigateToPublicUrl('https://www.instagram.com/samgreencorp/')} sx={styles.iconSocialLink} />

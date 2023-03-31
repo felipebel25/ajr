@@ -1,9 +1,9 @@
 export const styles = {
     main: {
-        width: "30.23%",
+        width: { xs: "90%", md: "30.23%" },
         height: "60%",
         backgroundColor: "#F6FDFF",
-        m: '2% 0',
+        m: {xs:'2% auto' , md: "2% 0"},
         maxWidth: { md: "370px", xl: "550px" },
         p: '2% 0',
         cursor: "pointer",

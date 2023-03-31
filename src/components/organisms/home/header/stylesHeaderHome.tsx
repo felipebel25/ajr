@@ -9,6 +9,8 @@ export const styles = {
     justifyContent: "space-between",
     alignItems: "center",
     padding: { xs: "3%", md: "2% 7%" },
+    backroundColor: "red"
+
   },
   headerScroll: {
     width: { xs: "100%", md: "100%" },
@@ -29,7 +31,7 @@ export const styles = {
     alignItems: "center",
   },
   containerBurgerIcon: {
-    display: { md: "none" }
+    display: { xs: "block", md: "none" }
   },
   burguerIcon: {
     width: "3.3rem",
@@ -37,14 +39,14 @@ export const styles = {
   },
   logoAjr: {
     width: { xs: "40%", md: "auto" },
-    maxWidth: { xs: "100px", md: "140px", xl:"170px" },
+    maxWidth: { xs: "100px", md: "140px", xl: "170px" },
 
   },
   button: {
-    ml: "2%",
+    ml: "5%",
     '&:hover': {
       backgroundColor: "primary.main",
-      opacity:"0.8"
+      opacity: "0.8"
     }
   },
   menu: {

@@ -1,5 +1,4 @@
-import { Box, Typography } from "@mui/material"
-
+import { Box, Theme, Typography, useMediaQuery } from "@mui/material"
 import { styles } from "./stylesThirdSection"
 
 export const ThirdSection = () => {

@@ -1,5 +1,4 @@
 import { HomeView } from '@/components/organisms/home/home/HomeView'
-import { Box } from '@mui/material'
 import Head from 'next/head'
 
 

@@ -5,7 +5,7 @@ import { NinthSection } from "@/components/molecules/home/ninthSection/NinthSect
 import { TenthSection } from "@/components/molecules/home/tenthSection/TenthSection"
 
 export const MainHome = () => {
-  
+
   return (
     <>
       <BannerSection />

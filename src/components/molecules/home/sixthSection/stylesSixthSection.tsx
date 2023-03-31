@@ -5,18 +5,26 @@ export const styles = {
         display: "flex",
         flexDirection: 'column',
         justifyContent: "center",
+        alignItems: { xs: "center", md: "stretch" },
         padding: "7% 13.5%",
 
     },
     head: {
         width: "100%",
         display: "flex",
-        justifyContent: "space-between",
+        flexDirection: { xs: "column", md: 'row' },
+        justifyContent: { xs: "center", md: "space-between" },
         alignItems: "center",
+        textAlign: { xs: "center", md: "left" },
     },
     headDescription: {
         width: { md: "35%", xl: "32%" },
 
+    },
+    headDescriptionText: {
+        m: "5% 0",
+        fontSize: "1.4rem",
+        color: "info.main"
     },
     headTitleContainer: {
         width: { md: "37%", xl: "32%" },
@@ -24,7 +32,7 @@ export const styles = {
 
     },
     headTitle: {
-        fontSize: "2.8rem",
+        fontSize: { xs: "2.4rem", md: "2.8rem" },
         fontWeight: 600,
         color: "primary.dark"
     },
@@ -38,11 +46,12 @@ export const styles = {
     buttonSeeMore: {
         backgroundColor: "secondary.main",
         color: "primary.main",
+        mt: { xs: "25%", md: "0" },
         '&:hover': {
             backgroundColor: "secondary.main",
             color: "primary.main",
-            opacity:"0.8"
-            
+            opacity: "0.8"
+
         }
     }
 

@@ -1,23 +1,25 @@
 export const styles = {
     main: {
         width: "100%",
-        height: "70vh",
+        height: { xs: "auto", md: "70vh" },
         display: "flex",
+        flexDirection: { xs: "column", md: "row" },
         justifyContent: "center",
         alignItems: "center",
-        padding: "4% 15%",
+        padding: { xs: "7%", md: "4% 15%" },
     },
     textSection: {
-        width: '50%',
+        width: { xs: "100%", md: '50%' },
         height: '85%',
         padding: { md: "4% 7%", xl: "4% 10%" },
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-evenly",
         alignItems: "flex-start",
+        textAlign: { xs: "center", md: "left" },
     },
     rowsSection: {
-        width: '50%',
+        width: { xs: "100%", md: '50%' },
         height: '100%',
         display: "flex",
         flexDirection: "column",
@@ -26,7 +28,7 @@ export const styles = {
     },
     row: {
         background: '#FFFFFF',
-        width: { xs: "90%", xl: "80%" },
+        width: { xs: "95%", xl: "80%" },
         boxShadow: '0px 10px 20px rgba(95, 95, 95, 0.1)',
         // ----Forma de rectangulo-------
         webkitTransform: 'skew(-20deg)',
@@ -36,7 +38,8 @@ export const styles = {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "4rem"
+        height: "4rem",
+        m: { xs: "2% 0", md: "" }
     },
     textRow: {
         // ----Quitando Forma de rectangulo-------
@@ -48,7 +51,9 @@ export const styles = {
         height: "6rem",
         display: "flex",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        textAlign: { xs: "center", md: "left" },
+        fontSize: { xs: "1.4rem", md: "1.6rem" },
     },
     title: {
         color: "secondary.dark",
@@ -61,6 +66,7 @@ export const styles = {
     button: {
         backgroundColor: "secondary.main",
         color: "primary.main",
+        mt: { xs: "8%", md: "0" },
         '&:hover': {
             backgroundColor: "secondary.main",
             color: "primary.main",

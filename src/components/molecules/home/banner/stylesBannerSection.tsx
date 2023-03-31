@@ -6,8 +6,8 @@ export const styles = {
         height: { xs: "auto", md: "93vh" },
         minHeight: "450px",
         width: "100%",
-        backgroundImage: "url(/images/home/background_banner.png)",
-        backgroundSize: "cover",
+        backgroundImage: { xs: "url(/images/home/background_banner_mobile.png)", md: "url(/images/home/background_banner.png)" },
+        backgroundSize: "100% 100%",
         backgroundBlendMode: 'overlay',
         mixBlendMode: 'overlay',
         //   background: 'radial-gradient(circle, rgba(167,176,209,0.5284488795518207) 0%, rgba(87,94,118,0) 35%)',
@@ -25,7 +25,7 @@ export const styles = {
         flexDirection: { xs: "column", md: 'row' },
         alignItems: "center",
         justifyContent: { xs: "space-around", md: 'space-between' },
-        textAlign: { xs: "center", md: "left" },
+        textAlign: { xs: "left", md: "left" },
         pt: { xs: "22%", md: "2%" },
         pb: { xs: '0' }
 
@@ -48,7 +48,7 @@ export const styles = {
     },
     containerImage: {
         width: { xs: "100%", md: "auto" },
-        height: "100%",
+        height: { xs: "70%", md: "100%" },
         mt: { xs: '2%' },
     },
     button: {

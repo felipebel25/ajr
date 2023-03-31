@@ -1,26 +1,29 @@
 export const styles = {
     main: {
-        height: { xs: "85%", xl: "75%" },
-        maxHeight: { xs: "0", md: "720px", xl: "900px" },
-        backgroundImage: "url(/images/home/email_background.png)",
+        height: { xs: "auto", md: "85%", xl: "75%" },
+        maxHeight: { xs: "none", md: "720px", xl: "900px" },
+        backgroundImage: { xs: "url(/images/home/background_email_mobile.png)", md: "url(/images/home/email_background.png)" },
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
+        backgroundSize: { xs: "cover", md: "cover" },
         width: "100%",
         display: "flex",
+        flexDirection: { xs: "column", md: "row" },
+
         alignItems: "flex-end",
-        padding: "2% 0"
+        padding: "2% 0",
     },
     textSection: {
-        width: "35%",
+        width: { xs: "100%", md: "35%" },
         height: "80%",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "flex-start",
-        padding: "5%"
+        padding: "5%",
+        mt: "5%"
     },
     formSection: {
-        width: "65%",
+        width: { xs: "100%", md: "65%" },
         height: { xs: "91%", xl: "90%" },
         maxHeight: { md: "600px", xl: "none" },
         padding: { xs: "4% 5%", xl: "0% 5%" },
@@ -46,6 +49,7 @@ export const styles = {
     formFiftyPercent: {
         width: "45%",
         color: "white",
+        m: { xs: "2% 0", md: "0" },
         [`& fieldset`]: {
             borderRadius: '4rem',
             borderColor: 'primary.main',

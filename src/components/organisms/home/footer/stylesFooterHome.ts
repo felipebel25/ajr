@@ -2,10 +2,9 @@ import { fonts } from "@/themes/fonts";
 
 export const styles = {
     main: {
-        height: { xs: "75%", md: "28vh" },
+        height: { xs: "auto", md: "28vh" },
         backgroundColor: 'secondary.dark',
-        padding: "1% 5%",
-        paddingTop: "2%",
+        padding: {xs:"7% 5%", md:"1% 5%"},
     },
     contactSection: {
         borderBottom: "0.5px solid #FFFFFF",
@@ -17,8 +16,8 @@ export const styles = {
 
     },
     contactSectionImage: {
-        width: "60%",
-        height: "50%",
+        width: { xs: "40%", md: "60%" },
+        height: { xs: "20%", md: "50%" },
 
     },
     contactSectionContact: {
@@ -31,8 +30,9 @@ export const styles = {
         fontWeight: 500,
         marginBottom: '5%',
         cursor: "pointer",
-        '&:hover':{
-            opacity:"0.7"
+        m: { xs: "8% 0" },
+        '&:hover': {
+            opacity: "0.7"
         }
     },
     optionContactLink: {
@@ -58,15 +58,16 @@ export const styles = {
 
     },
     containerIconsSocialLinks: {
-        width: { xs: "100%", md: "10%" },
+        width: { xs: "50%", md: "10%" },
         height: { xs: "50%", md: "auto" },
         display: "flex",
         justifyContent: { xs: "center", md: "flex-end" },
         alignItems: "center",
+        m:{xs:"2% 0" , md:"0"}
     },
     iconSocialLink: {
         width: { xs: "30%", md: "25%" },
-        height: { xs: "70%", md: "25%" },
+        height: { xs: "75%", md: "25%" },
         cursor: "pointer",
         margin: "0 2%",
         padding: "2%",

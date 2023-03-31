@@ -1,16 +1,18 @@
 import { MapGoogle } from "@/components/atoms/googleMap/GoogleMap"
 import { Call, Email, LocationOn } from "@mui/icons-material"
-import { Box, IconButton, List, ListItem, ListItemText, Typography } from "@mui/material"
+import { Box, IconButton, List, ListItem, ListItemText, Theme, Typography, useMediaQuery } from "@mui/material"
 import { styles } from "./stylesTenthSection"
 
 export const TenthSection = () => {
+    const isSmallScreen = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
+
     return (
         <Box sx={styles.main}>
             <Typography sx={styles.title}>Contact Us</Typography>
             <Box sx={styles.container}>
                 <Box sx={styles.textsSection}>
-                    <Typography component='h5' sx={styles.textSectiontitle} >Get in touch</Typography>
-                    <Typography >Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</Typography>
+                    {!isSmallScreen && <Typography component='h5' sx={styles.textSectiontitle} >Get in touch</Typography>}
+                    <Typography sx={styles.text} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</Typography>
                     <List>
                         <ListItem sx={styles.listItem} >
                             <IconButton sx={styles.iconButtonContainer}>
