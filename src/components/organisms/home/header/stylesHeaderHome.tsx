@@ -43,7 +43,7 @@ export const styles = {
 
   },
   button: {
-    ml: "5%",
+    ml: { md:"4%", xl:"3%"},
     '&:hover': {
       backgroundColor: "primary.main",
       opacity: "0.8"

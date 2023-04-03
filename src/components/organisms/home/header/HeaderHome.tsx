@@ -50,8 +50,6 @@ export const HeaderHome = () => {
                 <LinkHeader text="Services" href='https://shop.sam-green.com/shop/' />
                 <LinkHeader text="About Us" href='' />
                 <LinkHeader text="Contact Us" href='' />
-
-
                 <Button sx={styles.button} target='_blank' href="https://shop.sam-green.com/shop/">Book An Appointment</Button>
             </Box>
             {/* --------------------BurguerIcon---------------- */}

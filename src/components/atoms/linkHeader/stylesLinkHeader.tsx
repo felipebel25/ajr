@@ -4,7 +4,7 @@ export const styles = {
     links: {
         color: '#FFFFFF',
         opacity: '0.6',
-        margin: "0 4rem",
+        margin: { md:"0 2rem",  xl:"0 3rem"},
         fontFamily: fonts.secondary,
         fontSize: "1.6rem",
         fontWeight: 500,

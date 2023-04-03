@@ -51,7 +51,6 @@ export const styles = {
     yearsExperienceText: {
         fontSize: { xs: "0.8rem", md: "1rem" },
         color: "info.main"
-
     },
     image: {
         width: { xs: "95%", md: "60%" },
