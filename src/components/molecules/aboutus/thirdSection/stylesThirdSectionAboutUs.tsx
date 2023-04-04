@@ -3,32 +3,35 @@ export const styles = {
         width: "100%",
         height: "auto",
         display: "flex",
+        flexDirection: { xs: "column-reverse", md: "row" },
         padding: "2% 7%"
 
     },
     imgSection: {
-        width: "35%",
+        width: { xs: "100%", md: "35%" },
         display: 'flex',
         maxWidth: "550px",
-        alignItems: "center",
-        justifyContent: "flex-end",
+        alignItems: { xs: "flex-end", md: "flex-start" },
+        justifyContent: { xs: "flex-end", md: "flex-start" },
         // border: "1px solid red",
     },
     textSection: {
-        width: "65%",
+        width: { xs: "100%", md: "65%" },
         padding: "2%",
         pr: '13%',
         display: 'flex',
         flexDirection: "column",
         justifyContent: "center",
+        m: { xs: "10% 0", md: "0" }
+
     },
     image: {
-        width: { xs: "95%", md: "auto" },
+        width: { xs: "100%", md: "auto" },
         padding: "3.5%",
         boxShadow: '0px 20px 40px rgba(95, 95, 95, 0.2)',
         borderRadius: "2rem",
         position: "relative",
-        left: "15%",
+        left: { xs: "0", md: "15%" },
         // border: "1px solid red",
 
     },
@@ -46,13 +49,15 @@ export const styles = {
         flexDirection: "column",
         justifyContent: "center",
         alignContent: "center",
+
         textAlign: 'center',
         borderRadius: { xs: "95%", md: "50%" },
-        position: "relative",
         backgroundColor: 'primary.main',
-        top: { md: "40%", xl: "43%" },
-        bottom: { xs: "5rem", md: "0" },
-        right: { xs: "40%", md: "0%" },
-        padding: "2%"
+
+        position: { xs: "absolute", md: "relative" },
+        top: { xs: "initial", md: "70%", xl: "83%" },
+        bottom: { xs: "initial", md: "0" },
+        right: { xs: "initial", md: "0%" },
+        padding: "2%",
     },
 }
