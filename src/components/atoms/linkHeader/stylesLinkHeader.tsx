@@ -4,7 +4,7 @@ export const styles = {
     links: {
         color: '#FFFFFF',
         opacity: '0.6',
-        margin: { md:"0 2rem",  xl:"0 3rem"},
+        margin: { md: "0 2rem", xl: "0 3rem" },
         fontFamily: fonts.secondary,
         fontSize: "1.6rem",
         fontWeight: 500,
@@ -60,7 +60,7 @@ export const styles = {
     linkActive: {
         color: '#FFFFFF',
         opacity: '1',
-        margin: "0 5%",
+        margin: { md: "0 2rem", xl: "0 3rem" },
         fontFamily: fonts.secondary,
         fontSize: "1.6rem",
         fontWeight: 500,
@@ -69,7 +69,6 @@ export const styles = {
         cursor: "pointer",
         '&:hover': {
             opacity: "1",
-
             '&::after': {
                 width: '100%',
                 transition: 'width 0.3s ease-in-out',

@@ -1,13 +1,13 @@
-import { AppBar, Box, Button, IconButton, Menu, MenuItem, useScrollTrigger } from "@mui/material"
+import { MouseEvent, useState } from "react"
+import { useRouter } from "next/router"
 import Image from "next/image"
+import { Box, Button, IconButton, Menu, MenuItem, useScrollTrigger } from "@mui/material"
 
 import { LinkHeader } from "@/components/atoms/linkHeader/LinkHeader"
-
 import { MenuOutlined } from "@mui/icons-material"
+import { navigateToPublicUrl } from "@utils"
+
 import { styles } from "./stylesHeaderHome"
-import { useRouter } from "next/router"
-import { MouseEvent, useCallback, useEffect, useState } from "react"
-import { navigateToPublicUrl } from "@/utils/globalUtils"
 
 
 
@@ -46,10 +46,10 @@ export const HeaderHome = () => {
             </Box>
             {/* -------------------Links------------------ */}
             <Box sx={styles.linksContainer} >
-                <LinkHeader text="Home" href='' />
-                <LinkHeader text="Services" href='https://shop.sam-green.com/shop/' />
-                <LinkHeader text="About Us" href='' />
-                <LinkHeader text="Contact Us" href='' />
+                <LinkHeader text="Home" href='/' />
+                <LinkHeader text="Services" href='/services' />
+                <LinkHeader text="About Us" href='/aboutus' />
+                <LinkHeader text="Contact Us" href='/' />
                 <Button sx={styles.button} target='_blank' href="https://shop.sam-green.com/shop/">Book An Appointment</Button>
             </Box>
             {/* --------------------BurguerIcon---------------- */}
@@ -69,12 +69,18 @@ export const HeaderHome = () => {
                     setAnchorEl(null)
                     push('/')
                 }}>Home</MenuItem>
-                <MenuItem sx={styles.menuItem} onClick={() => handleClose('https://shop.sam-green.com/shop/')}>Shop</MenuItem>
-                <MenuItem sx={styles.menuItem} onClick={() => handleClose('')}>Products</MenuItem>
-                <MenuItem sx={styles.menuItem} onClick={() => handleClose('')}>Referral Link</MenuItem>
-                <MenuItem sx={styles.menuItem} onClick={() => handleClose('https://shop.sam-green.com/faq/')}>FAQ</MenuItem>
-                <MenuItem sx={styles.menuItem} onClick={() => handleClose('https://shop.sam-green.com/contact/')}>Contact</MenuItem>
-
+                <MenuItem sx={styles.menuItem} onClick={() => {
+                    setAnchorEl(null)
+                    push('/services')
+                }}>Services</MenuItem>
+                <MenuItem sx={styles.menuItem} onClick={() => {
+                    setAnchorEl(null)
+                    push('/aboutus')
+                }}>About Us</MenuItem>
+                <MenuItem sx={styles.menuItem} onClick={() => {
+                    setAnchorEl(null)
+                    push('/')
+                }}>Contact Us</MenuItem>
             </Menu>
 
         </Box>

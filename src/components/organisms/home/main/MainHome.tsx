@@ -1,8 +1,4 @@
-import { BannerSection, FifthSection, FourthSection, SecondSection, SeventhSection, SixthSection, ThirdSection } from "@/components/molecules"
-import { EightSection } from "@/components/molecules/home/eightSection/EightSection"
-import { EleventhSection } from "@/components/molecules/home/eleventhSection/EleventhSection"
-import { NinthSection } from "@/components/molecules/home/ninthSection/NinthSection"
-import { TenthSection } from "@/components/molecules/home/tenthSection/TenthSection"
+import { BannerSection, EightSection, EleventhSection, FifthSection, FourthSection, NinthSection, SecondSection, SeventhSection, SixthSection, TenthSection, ThirdSection } from "@molecules"
 
 export const MainHome = () => {
 

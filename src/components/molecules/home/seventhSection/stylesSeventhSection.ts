@@ -13,6 +13,7 @@ export const styles = {
         backgroundImage: { xs: "url(/images/home/background_schedule_mobile.png)", md: "url(/images/home/calendary_bg.png)" },
         backgroundRepeat: "no-repeat",
         backgroundSize: { xs: "cover", md: "cover" },
+        marginTop: "2rem"
     },
     calendaryContainer: {
         width: "50%",
