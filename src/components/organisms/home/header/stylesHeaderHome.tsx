@@ -1,4 +1,3 @@
-
 export const styles = {
   header: {
     width: { xs: "100%", md: "100%" },
@@ -38,9 +37,14 @@ export const styles = {
     height: "3.3rem"
   },
   logoAjr: {
-    width: { xs: "40%", md: "auto" },
-    maxWidth: { xs: "100px", md: "140px", xl: "170px" },
-
+    width: { xs: "40%", md: "50%" },
+    maxWidth: { xs: "100px", md: "250px", xl: "330px" },
+    mt:"3%",
+  },
+  logoAjrReduced: {
+    width: { xs: "40%", md: "30%" },
+    maxWidth: { xs: "100px", md: "150px", xl: "220px" },
+    padding:"1%"
   },
   button: {
     ml: { md:"4%", xl:"3%"},

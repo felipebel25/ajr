@@ -12,10 +12,10 @@ interface Props {
 
 export const ThirdSectionServices = ({ altImg = 'Ajr', img, imgIcon, title, texts }: Props) => {
     return (
-        <Box sx={styles.main}>
+        <Box sx={styles.main} id={`services_${title.toLowerCase().trim()}`}>
             <Box sx={styles.containerImg}>
                 <Image
-                    alt="NFC technology"
+                    alt="Bussiness, Accounting, Taxes"
                     quality={100}
                     style={{ width: "100%", height: "100%" }}
                     src={img}

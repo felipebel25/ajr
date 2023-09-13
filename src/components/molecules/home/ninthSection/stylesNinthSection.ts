@@ -61,7 +61,8 @@ export const styles = {
         fontSize: "2.8rem",
     },
     description: {
-        m: '5% 0'
+        m: '7.5% 0',
+        textAlign: "left"
     },
     button: {
         backgroundColor: "secondary.main",

@@ -5,6 +5,7 @@ export const styles = {
         p: { xs: "4% 4%", md: '2% 17%' },
         width: "100%",
         height: "auto",
+        scrollMargin: "80px"
     },
     containerImg: {
         width: { xs: "100%", md: "40%" },

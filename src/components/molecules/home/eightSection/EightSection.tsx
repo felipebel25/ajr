@@ -1,5 +1,5 @@
 import { CheckCircle } from "@mui/icons-material"
-import { Box, Button, List, ListItem, ListItemIcon, ListItemText, Typography } from "@mui/material"
+import { Box, Button, List, ListItem, ListItemText, Typography } from "@mui/material"
 import Image from "next/image"
 import { styles } from "./stylesEightSection"
 
@@ -13,7 +13,7 @@ export const EightSection = () => {
                 </Box>
                 <Box sx={styles.image}>
                     <Image
-                        alt="NFC technology"
+                        alt="About us AJR accounting, taxes"
                         quality={100}
                         style={{ width: "100%", height: "100%" }}
                         src='/images/home/about_us.png'
@@ -29,15 +29,15 @@ export const EightSection = () => {
                     <List>
                         <ListItem sx={styles.listItem}>
                             <CheckCircle sx={styles.checkIcon} color="secondary" />
-                            <ListItemText>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</ListItemText>
+                            <ListItemText>We know choosing an accounting firm is a difficult task.</ListItemText>
                         </ListItem>
                         <ListItem sx={styles.listItem}>
                             <CheckCircle sx={styles.checkIcon} color="secondary" />
-                            <ListItemText>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</ListItemText>
+                            <ListItemText>We take pride in our work and our clients.</ListItemText>
                         </ListItem>
                         <ListItem sx={styles.listItem}>
                             <CheckCircle sx={styles.checkIcon} color="secondary" />
-                            <ListItemText>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</ListItemText>
+                            <ListItemText>We go the extra mile to ensure your business succeeds and we are always available to answer any questions you may have.</ListItemText>
                         </ListItem>
                     </List>
                 </Box>

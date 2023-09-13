@@ -35,7 +35,7 @@ export const SixthSection = () => {
                         with our services</Typography>
                 </Box>
                 <Box sx={styles.headDescription}>
-                    <Typography sx={styles.headDescriptionText}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </Typography>
+                    <Typography sx={styles.headDescriptionText}>We utilize an integrated approach to tax and business planning while considering the individual needs of the shareholders, their estates and their businesses. Our Firm has built an extraordinary track record of helping clients realize their objectives.</Typography>
                 </Box>
             </Box>
             {isSmallScreen ?
@@ -46,24 +46,81 @@ export const SixthSection = () => {
                     responsive={responsive}
                     {...settings}
                 >
-                       <CardService />
-                    <CardService />
-                    <CardService />
-                    <CardService />
-                    <CardService />
-                    <CardService />
+                    <CardService
+                        title="Business"
+                        listItems={['Bookkeeping', 'Financial Reports', 'Audits']}
+                        urlIcon="/images/home/business_service.png"
+                    />
+                    <CardService
+                        title="Payrolls"
+                        listItems={['Processing paychecks', 'Filing federal, state, and local tax deposits', 'Quarterly tax returns']}
+                        urlIcon="/images/home/business_service.png"
+
+                    />
+                    <CardService
+                        title="Business Registrations"
+                        listItems={['Incorporation in 24 hours', 'Business Consulting', 'Business Plan']}
+                        urlIcon="/images/home/business_service.png"
+
+                    />
+                    <CardService
+                        title="Accounting Services"
+                        listItems={['Income tax preparations', 'Business tax returns', 'Individual tax returns']}
+                        urlIcon="/images/home/business_service.png"
+
+                    />
+                    <CardService
+                        title="Tax Issues"
+                        listItems={['Planning, Preparation', 'Tax audit representation', 'Assistance with IRA and state notices']}
+                        urlIcon="/images/home/business_service.png"
+
+                    />
+                    <CardService
+                        title="Personal Services"
+                        listItems={['Processing paychecks', 'Filing federal, state, and local tax deposits', 'Quarterly pax returns']}
+                        urlIcon="/images/home/business_service.png"
+
+                    />
                 </AliceCarousel>
                 :
                 <Box sx={styles.cardsContainer}>
-                    <CardService />
-                    <CardService />
-                    <CardService />
-                    <CardService />
-                    <CardService />
-                    <CardService />
+                    <CardService
+                        title="Business"
+                        listItems={['Bookkeeping', 'Financial Reports', 'Audits']}
+                        urlIcon="/images/home/business_service.png"
+                    />
+                    <CardService
+                        title="Payrolls"
+                        listItems={['Processing paychecks', 'Filing federal, state, and local tax deposits', 'Quarterly tax returns']}
+                        urlIcon="/images/home/payroll.png"
+
+                    />
+                    <CardService
+                        title="Business Registrations"
+                        listItems={['Incorporation in 24 hours', 'Business Consulting', 'Business Plan']}
+                        urlIcon="/images/home/business_registration.png"
+
+                    />
+                    <CardService
+                        title="Accounting Services"
+                        listItems={['Income tax preparations', 'Business tax returns', 'Individual tax returns']}
+                        urlIcon="/images/home/accounting_services.png"
+
+                    />
+                    <CardService
+                        title="Tax Issues"
+                        listItems={['Planning, Preparation', 'Tax audit representation', 'Assistance with IRA and state notices']}
+                        urlIcon="/images/home/tax_issues.png"
+
+                    />
+                    <CardService
+                        title="Personal Services"
+                        listItems={['Processing paychecks', 'Filing federal, state, and local tax deposits', 'Quarterly pax returns']}
+                        urlIcon="/images/home/personal_services.png"
+
+                    />
                 </Box>
             }
-
             <Box>
                 <Button sx={styles.buttonSeeMore}>
                     See more

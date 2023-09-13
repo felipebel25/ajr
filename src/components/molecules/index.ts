@@ -20,7 +20,7 @@ export { FourthSection } from "./home/fourthSection/FourthSection";
 
 export { NinthSection } from "./home/ninthSection/NinthSection";
 
-export { SecondSection } from "./home/secondSection/SecondSection";
+export { Testimonials } from "./home/testimonials/Testiomonials";
 
 export { SeventhSection } from "./home/seventhSection/SeventhSection";
 

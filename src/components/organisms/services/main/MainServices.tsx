@@ -3,7 +3,10 @@ import { BannerAboutUs, FourthSectionServices, SecondSectionServices, SeventhSec
 export const MainServices = () => {
     return (
         <>
-            <BannerAboutUs title="Services For Your Business Growth" />
+            <BannerAboutUs
+                title="Services For Your Business Growth"
+                description="You’d never believe we weren’t your in house accounting team. We’ll import bank statements, categorize transactions,  prepare financial statements every month and so much more. Most importantly, we’ll be there to answer any questions at any time as if we were in the office with you."
+            />
             {/* ----------title & description empower your business----------- */}
             <SecondSectionServices />
             {/* ----------Business----------- */}
@@ -19,7 +22,7 @@ export const MainServices = () => {
                 img="/images/services/payroll_section_services.png"
                 imgIcon="/images/iconpng/computer.png"
                 texts={payrollServices}
-                title='Payroll'
+                title='Payrolls'
             />
             {/* ----------------Accounting Services------------------------ */}
             <ThirdSectionServices
@@ -35,8 +38,7 @@ export const MainServices = () => {
                 img="/images/services/business_registrations_services.png"
                 imgIcon="/images/iconpng/business_registrations_icon.png"
                 texts={businessServices}
-                title='Business
-                    Registrations'
+                title='Business Registrations'
             />
             {/* ----------------------Tax Issues--------------------- */}
             <ThirdSectionServices
