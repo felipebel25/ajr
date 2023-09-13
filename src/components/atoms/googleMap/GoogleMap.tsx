@@ -66,11 +66,12 @@ export const MapGoogle = ({ lat = 0, lng = 0 }) => {
             }}
         >
             <Map
-                bootstrapURLKeys={{
-                    key:
-                        process.env.NODE_ENV === "production" ? URL_GOOGLE_LOCATIONS : "",
+                // bootstrapURLKeys={{
+                //     key:
+                //         process.env.NODE_ENV === "production" ? URL_GOOGLE_LOCATIONS : "",
 
-                }}
+                // }}
+                bootstrapURLKeys={{ key: "" }}
                 options={{ styles: themeMap }}
                 defaultCenter={center}
                 defaultZoom={zoom}
