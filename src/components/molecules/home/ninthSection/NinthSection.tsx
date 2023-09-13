@@ -9,7 +9,7 @@ export const NinthSection = () => {
         <Box sx={styles.main}>
             <Box sx={styles.textSection}>
                 <Typography sx={styles.title} component='h5'>Expert Accounting Services In Different Industries & Businesses</Typography>
-                <Typography sx={styles.description}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Typography>
+                <Typography sx={styles.description}>15 years of experience has taught us that one-size-fits-all approaches don’t help businesses reach their full potential. That’s why we believe in understanding every client—their industry, their culture and their unique challenges—before we lay out any strategy.</Typography>
                 {!isSmallScreen && <Button sx={styles.button}>Book An Appointment</Button>}
             </Box>
             <Box sx={styles.rowsSection}>
@@ -33,7 +33,7 @@ export const NinthSection = () => {
                 </Box>
 
             </Box>
-            {isSmallScreen && <Button sx={styles.button}>Book An Appointment</Button>}
+            {isSmallScreen && <Button sx={styles.button} href="https://calendly.com/ajraccounting/1-hour-consultation-call">Book An Appointment</Button>}
 
         </Box>
     )

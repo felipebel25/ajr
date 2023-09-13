@@ -12,7 +12,7 @@ export const BannerSection = () => {
                         Go Away On Their Own!</Typography>
                     <Typography sx={styles.subtitle} component='h6' variant="h6">If the IRS is knocking on your door, Our Tax
                         Resolution Team can help you find relief—fast!</Typography>
-                    <Button sx={styles.button} target='_blank' href="https://shop.sam-green.com/shop/">Book An Appointment</Button>
+                    <Button sx={styles.button} target='_blank' href="https://calendly.com/ajraccounting/1-hour-consultation-call">Book An Appointment</Button>
                 </Box>
                 <Box sx={styles.containerImage}>
                     <Image

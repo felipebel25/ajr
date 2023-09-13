@@ -1,28 +1,34 @@
 import { ArrowForward } from "@mui/icons-material"
-import { Avatar, Box, Card, CardContent, CardHeader, IconButton, List, ListItem, ListItemText, Typography } from "@mui/material"
+import { Avatar, Box, Card, CardContent, IconButton, List, ListItem, ListItemText, Typography } from "@mui/material"
 import { styles } from "./stylesCardService"
+import { useRouter } from "next/router";
 
-export const CardService = () => {
+interface Props {
+    title: string;
+    listItems: string[];
+    urlIcon: string;
+
+}
+
+export const CardService = ({ title, listItems, urlIcon }: Props) => {
+    const { push } = useRouter()
     return (
-        <Card sx={styles.main}>
+        <Card sx={styles.main} onClick={() => push(`/services/#services_${title.toLowerCase().trim()}`)}>
             <Box sx={styles.cardHeader}>
                 <Avatar
                     sx={styles.avatar}
-                    src="/images/home/business_service.png"
+                    src={urlIcon}
                 />
-                <Typography sx={styles.title}>Business</Typography>
+                <Typography sx={styles.title}>{title}</Typography>
             </Box>
             <CardContent>
                 <List sx={styles.list}>
-                    <ListItem sx={styles.listItem} >
-                        <ListItemText>Bookkeping</ListItemText>
-                    </ListItem>
-                    <ListItem sx={styles.listItem} >
-                        <ListItemText>Financial Report</ListItemText>
-                    </ListItem>
-                    <ListItem sx={styles.listItem} >
-                        <ListItemText>Audits</ListItemText>
-                    </ListItem>
+                    {listItems.map((item) => (
+                        <ListItem key={item} sx={styles.listItem} >
+                            <ListItemText>{item}</ListItemText>
+                        </ListItem>
+
+                    ))}
                 </List>
             </CardContent>
             <Box sx={styles.iconContainer}>

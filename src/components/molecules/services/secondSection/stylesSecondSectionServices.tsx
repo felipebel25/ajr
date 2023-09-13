@@ -13,8 +13,7 @@ export const styles = {
     text: {
         color: "info.main",
         fontWeight: 400,
-        textAlign: "center",
-        maxWidth: "541px",
+        maxWidth: "820px",
         fontSize:{xs:"1.4rem" , md:"1.6rem"},
         m: "0 auto"
     }

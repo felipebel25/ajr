@@ -1,7 +1,7 @@
 export const styles = {
     main: {
-        width: { xs: "95%", md: "30%", xl: "25%" },
-        height: { xs: "100%", xl: "90%" },
+        width: { xs: "95%", md: "95%", xl: "75%" },
+        height: { xs: "100%", xl: "100%" },
         maxWidth: "400px",
         maxHeight: "330px",
         backgroundColor: "#F6FDFF",
@@ -13,7 +13,7 @@ export const styles = {
         textAlign: 'center',
         flexDirection: "column",
         padding: "4% 2%",
-        m: { xs: "3% auto", sm: "0" },
+        m: { xs: "3% auto", sm: "0 auto" },
         '&:hover': {
             boxShadow: '0px 5px 5px rgba(0,0,0,0.08)'
         }
@@ -21,12 +21,12 @@ export const styles = {
     text: {
         color: "info.contrastText",
         fontWeight: 400,
-        mb: "4%",
     },
     person: {
         width: "80%",
         display: "flex",
-        mt: "8%"
+        justifyContent: "center",
+        mt: "5%"
     },
     avatar: {
         mr: "4%",
@@ -35,10 +35,12 @@ export const styles = {
 
     },
     personText: {
-        textAlign: "left"
+        textAlign: "center",
     },
     personName: {
-        fontWeight: 500
+        fontWeight: 500,
+        color: "info.contrastText"
+
     },
     personPosition: {
         fontWeight: 400,

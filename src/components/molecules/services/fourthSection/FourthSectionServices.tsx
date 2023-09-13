@@ -12,7 +12,7 @@ interface Props {
 
 export const FourthSectionServices = ({ altImg = 'Ajr', img, imgIcon, title, texts }: Props) => {
     return (
-        <Box sx={styles.main}>
+        <Box sx={styles.main} id={`services_${title.toLowerCase().trim()}`}>
             <Box sx={styles.containerImg}>
                 <Image
                     alt={altImg}

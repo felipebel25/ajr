@@ -5,7 +5,8 @@ export const styles = {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        mb: { xs: "5%", md: "0" }
+        mb: { xs: "5%", md: "0" },
+        scrollMargin: '80px',
     },
     title: {
         fontSize: { xs: "2.4rem", md: '2.8rem' },

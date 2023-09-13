@@ -1,15 +1,20 @@
 import { Avatar, Box, Typography } from "@mui/material"
 import { styles } from "./stylesCardRecommend"
 
-export const CardRecommend = () => {
+interface Props {
+    text: string;
+    author: string;
+    role: string;
+}
+
+export const CardRecommend = ({ text = '', author = '', role = '' }: Props) => {
     return (
         <Box sx={styles.main}>
-            <Typography sx={styles.text} color='primary.dark'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Typography>
+            <Typography sx={styles.text} color='primary.dark'>{text}</Typography>
             <Box sx={styles.person}>
-                <Avatar sx={styles.avatar} src="/images/recomendations/women.png" />
+                {/* <Avatar sx={styles.avatar} src="/images/recomendations/women.png" /> */}
                 <Box sx={styles.personText} >
-                    <Typography sx={styles.personName}>Valery Steven</Typography>
-                    <Typography sx={styles.personPosition}>Business Manage</Typography>
+                    <Typography sx={styles.personName}> <strong>{author}</strong><br /> {role}</Typography>
                 </Box>
             </Box>
         </Box>

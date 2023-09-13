@@ -6,7 +6,7 @@ export const styles = {
         flexDirection: 'column',
         justifyContent: "center",
         alignItems: { xs: "center", md: "stretch" },
-        padding: "7% 13.5%",
+        padding: { xs: "7% 7%", md: "7% 13.5%" },
 
     },
     head: {

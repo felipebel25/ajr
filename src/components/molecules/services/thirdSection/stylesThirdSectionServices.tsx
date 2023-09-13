@@ -5,6 +5,7 @@ export const styles = {
         width: "100%",
         height: "auto",
         flexDirection: { xs: "column", md: "row" },
+        scrollMargin: "80px"
     },
     containerImg: {
         width: { xs: "100%", md: "40%" },

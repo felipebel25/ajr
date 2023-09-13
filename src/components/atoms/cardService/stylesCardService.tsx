@@ -1,9 +1,9 @@
 export const styles = {
     main: {
-        width: { xs: "90%", md: "30.23%" },
+        width: { xs: "100%", md: "30.23%" },
         height: "60%",
         backgroundColor: "#F6FDFF",
-        m: {xs:'2% auto' , md: "2% 0"},
+        m: { xs: '2% auto', md: "2% 0" },
         maxWidth: { md: "370px", xl: "550px" },
         p: '2% 0',
         cursor: "pointer",
@@ -21,8 +21,8 @@ export const styles = {
     avatar: {
         backgroundColor: "secondary.main",
         width: "7rem",
-        height: "6.6rem",
-        padding: "4%",
+        height: "7rem",
+        padding: "5%",
         m: "0 5%"
 
     },

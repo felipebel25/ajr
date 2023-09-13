@@ -7,12 +7,14 @@ export const TenthSection = () => {
     const isSmallScreen = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
 
     return (
-        <Box sx={styles.main}>
+        <Box sx={styles.main} id='contact_us'>
             <Typography sx={styles.title}>Contact Us</Typography>
             <Box sx={styles.container}>
                 <Box sx={styles.textsSection}>
                     {!isSmallScreen && <Typography component='h5' sx={styles.textSectiontitle} >Get in touch</Typography>}
-                    <Typography sx={styles.text} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</Typography>
+                    <Typography sx={styles.text} >
+                        Call us today to set up a time to talk about your accounting needs.
+                    </Typography>
                     <List>
                         <ListItem sx={styles.listItem} >
                             <IconButton sx={styles.iconButtonContainer}>
@@ -20,7 +22,7 @@ export const TenthSection = () => {
                             </IconButton>
                             <Box>
                                 <Typography sx={styles.listTextTitle}>Head Office</Typography>
-                                <Typography>Lorem ipsum dolor sit amet, 1234</Typography>
+                                <Typography>2750 E SPRING ST.     SUITE 140, LONG BEACH, CA 90806</Typography>
                             </Box>
                         </ListItem>
                         <ListItem sx={styles.listItem} >
@@ -29,7 +31,7 @@ export const TenthSection = () => {
                             </IconButton>
                             <Box>
                                 <Typography sx={styles.listTextTitle}>Email</Typography>
-                                <Typography>ejemplo@ajrwebsite.com</Typography>
+                                <Typography>Contact@AJRaccounting.com</Typography>
                             </Box>
                         </ListItem>
                         <ListItem sx={styles.listItem} >
@@ -38,8 +40,8 @@ export const TenthSection = () => {
                             </IconButton>
                             <Box>
                                 <Typography sx={styles.listTextTitle}>Head Office</Typography>
-                                <Typography>Phone: +1 555 555 55 55</Typography>
-                                <Typography>Fax: +1 555 555 55 55</Typography>
+                                <Typography>Phone: 714-873-6355</Typography>
+                                {/* <Typography>Fax: +1 555 555 55 55</Typography> */}
                             </Box>
                         </ListItem>
                     </List>

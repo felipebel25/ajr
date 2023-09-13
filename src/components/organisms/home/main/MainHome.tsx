@@ -1,13 +1,13 @@
-import { BannerSection, EightSection, EleventhSection, FifthSection, FourthSection, NinthSection, SecondSection, SeventhSection, SixthSection, TenthSection, ThirdSection } from "@molecules"
+import { BannerSection, EightSection, EleventhSection, FifthSection, FourthSection, NinthSection, Testimonials, SeventhSection, SixthSection, TenthSection, ThirdSection } from "@molecules"
 
 export const MainHome = () => {
 
   return (
     <>
       <BannerSection />
-      {/* -------------Cards Reccomendations------ */}
-      <SecondSection />
-      {/* -------------Text------------ -----------*/}
+      {/* -------------Testimonials -- Cards Reccomendations------ */}
+      <Testimonials />
+      {/* -------------Text-----------------------*/}
       <ThirdSection />
       {/* -------------Image and Text------------  */}
       <FourthSection />
@@ -25,7 +25,6 @@ export const MainHome = () => {
       <TenthSection />
       {/* -------------Email Form----------------- */}
       <EleventhSection />
-
     </>
   )
 }

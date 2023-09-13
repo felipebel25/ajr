@@ -39,7 +39,9 @@ export const FooterHome = () => {
                         </Link>
                     </Box>
                     <Box sx={styles.contactSectionContact}>
-                        <Typography sx={styles.contactTitle}>Contact Us</Typography>
+                        <Link href='/#contact_us'>
+                            <Typography sx={styles.contactTitle}>Contact Us</Typography>
+                        </Link>
                     </Box>
                 </Box>
             </Box>
@@ -48,8 +50,8 @@ export const FooterHome = () => {
                     <Typography>Accounting & Associates LLC® {year.getFullYear()}</Typography>
                 </Box>
                 <Box sx={styles.containerIconsSocialLinks}>
-                    <InstagramIcon onClick={() => navigateToPublicUrl('https://www.instagram.com/samgreencorp/')} sx={styles.iconSocialLink} />
-                    <FacebookIcon onClick={() => navigateToPublicUrl('https://www.facebook.com/samgreencorp')} sx={styles.iconSocialLink} />
+                    {/* <InstagramIcon onClick={() => navigateToPublicUrl('https://www.instagram.com/samgreencorp/')} sx={styles.iconSocialLink} /> */}
+                    <FacebookIcon onClick={() => navigateToPublicUrl('https://www.facebook.com/ajraccountingtaxservices')} sx={styles.iconSocialLink} />
                 </Box>
             </Box>
 
