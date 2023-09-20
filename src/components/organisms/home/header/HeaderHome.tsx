@@ -20,10 +20,7 @@ export const HeaderHome = () => {
     const open = Boolean(anchorEl);
     const handleClick = (event: MouseEvent<HTMLButtonElement>) => setAnchorEl(event.currentTarget);
 
-    const handleClose = (url: string) => {
-        setAnchorEl(null);
-        navigateToPublicUrl(url)
-    };
+
     
     const trigger = useScrollTrigger({
         disableHysteresis: true,
@@ -49,7 +46,7 @@ export const HeaderHome = () => {
                 <LinkHeader text="Services" href='/services' />
                 <LinkHeader text="About Us" href='/aboutus' />
                 <LinkHeader text="Contact Us" href='/#contact_us' />
-                <Button sx={styles.button} target='_blank' href="https://calendly.com/ajraccounting/1-hour-consultation-call">Book An Appointment</Button>
+                <Button sx={styles.button} target='_blank' href="https://calendly.com/ajr-accounting/30min">Book An Appointment</Button>
             </Box>
             {/* --------------------BurguerIcon---------------- */}
             <IconButton sx={styles.containerBurgerIcon} onClick={handleClick}>

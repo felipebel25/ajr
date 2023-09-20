@@ -26,13 +26,15 @@ export const styles = {
         width: "80%",
         display: "flex",
         justifyContent: "center",
-        mt: "5%"
     },
     avatar: {
         mr: "4%",
         width: "5rem",
         height: "5rem",
 
+    },
+    ratingContainer: {
+        m:"2% 0"
     },
     personText: {
         textAlign: "center",

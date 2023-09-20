@@ -1,46 +1,38 @@
 export { BannerAboutUs } from "./aboutus/banner/BannerAboutUs";
 
-export { FourthSectionAboutUs } from "./aboutus/fourthSection/FourthSection";
+export * from "./aboutus/ourFirm/OurFirm";
 
-export { SecondSectionAbout } from "./aboutus/secondSection/SecondSection";
+export *  from "./aboutus/ajrAccountingServices/AjrAccountingServices";
 
 
-export {
-	ThirdSectionAboutUs
-} from "./aboutus/thirdSection/ThirdSectionAboutUs";
+export * from "./aboutus/qualifiedConsultants/QualifiedConsultants";
 export { BannerSection } from "./home/banner/BannerSection";
 
-export { EightSection } from "./home/eightSection/EightSection";
+export * from "./home/aboutUsHome/AboutUsHome";
 
-export { EleventhSection } from "./home/eleventhSection/EleventhSection";
+export * from "./home/emailForm/EmailForm";
 
 export { FifthSection } from "./home/fifthSection/FifthSection";
 
-export { FourthSection } from "./home/fourthSection/FourthSection";
+export * from "./home/ourEasyProcess/OurEasyProcess";
 
-export { NinthSection } from "./home/ninthSection/NinthSection";
+export * from "./home/expertAccounting/ExpertAccounting";
 
 export { Testimonials } from "./home/testimonials/Testiomonials";
 
-export { SeventhSection } from "./home/seventhSection/SeventhSection";
+export { ScheduleAppointment } from "./home/scheduleAppointment/ScheduleAppointment";
 
-export { SixthSection } from "./home/sixthSection/SixthSection";
+export * from "./home/empowerBusiness/EmpowerBusiness";
 
 
-export { TenthSection } from "./home/tenthSection/TenthSection";
+export * from "./home/contactUs/ContactUs";
 
-export { ThirdSection } from "./home/thirdSection/ThirdSection";
-export {
-	FourthSectionServices
-} from "./services/fourthSection/FourthSectionServices";
+export * from "./home/hereHowWehelp/HereHowWehelp";
+export * from "./services/serviceRightSide/ServiceRightSide";
 
-export {
-	SecondSectionServices
-} from "./services/secondSection/SecondSectionServices";
+export * from "./services/empowerYourBusiness/EmpowerYourBusiness";
 export {
 	styles
-} from "./services/secondSection/stylesSecondSectionServices";
+} from "./services/empowerYourBusiness/stylesEmpowerYourBusiness";
 
-export {
-	ThirdSectionServices
-} from "./services/thirdSection/ThirdSectionServices";
+export * from "./services/servicesLeftSide/ServicesLeftSide";

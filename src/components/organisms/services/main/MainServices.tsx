@@ -1,4 +1,4 @@
-import { BannerAboutUs, FourthSectionServices, SecondSectionServices, SeventhSection, ThirdSectionServices } from "@molecules";
+import { BannerAboutUs, ServiceRightSide, ScheduleAppointment,EmpowerYourBusiness, ServicesLeftSide } from "@molecules";
 
 export const MainServices = () => {
     return (
@@ -8,9 +8,9 @@ export const MainServices = () => {
                 description="You’d never believe we weren’t your in house accounting team. We’ll import bank statements, categorize transactions,  prepare financial statements every month and so much more. Most importantly, we’ll be there to answer any questions at any time as if we were in the office with you."
             />
             {/* ----------title & description empower your business----------- */}
-            <SecondSectionServices />
+            <EmpowerYourBusiness />
             {/* ----------Business----------- */}
-            <ThirdSectionServices
+            <ServicesLeftSide
                 img="/images/services/business_services.png"
                 imgIcon="/images/home/business_service.png"
                 texts={firstServices}
@@ -18,44 +18,42 @@ export const MainServices = () => {
 
             />
             {/* -------------Payroll------------------------ */}
-            <FourthSectionServices
+            <ServiceRightSide
                 img="/images/services/payroll_section_services.png"
                 imgIcon="/images/iconpng/computer.png"
                 texts={payrollServices}
                 title='Payrolls'
             />
             {/* ----------------Accounting Services------------------------ */}
-            <ThirdSectionServices
+            <ServicesLeftSide
                 img="/images/services/tax_services.png"
                 imgIcon="/images/iconpng/accounting_services_icon.png"
                 texts={taxServices}
-                title='Accounting
-                    Services'
-
+                title='Accounting Services'
             />
             {/* ------------------Business Registrations------------------------ */}
-            <FourthSectionServices
+            <ServiceRightSide
                 img="/images/services/business_registrations_services.png"
                 imgIcon="/images/iconpng/business_registrations_icon.png"
                 texts={businessServices}
                 title='Business Registrations'
             />
             {/* ----------------------Tax Issues--------------------- */}
-            <ThirdSectionServices
+            <ServicesLeftSide
                 img="/images/services/tax_issues.png"
                 imgIcon="/images/iconpng/tax_issues_icon.png"
                 texts={taxIssues}
                 title='Tax Issues'
             />
             {/* ----------------personal Services------------------- */}
-            <FourthSectionServices
+            <ServiceRightSide
                 img="/images/services/personal_services.png"
                 imgIcon="/images/iconpng/personal_services_icon.png"
                 texts={personalServices}
                 title='Personal Services'
             />
             {/* -------------------Schedule ---------------- */}
-            <SeventhSection />
+            <ScheduleAppointment />
         </>
     )
 }

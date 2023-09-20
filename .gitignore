@@ -41,3 +41,6 @@ yarn.lock
 
 # vercel
 .vercel
+.vscode
+# only for testing in vercel
+.azuredevops

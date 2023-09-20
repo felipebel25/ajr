@@ -2,7 +2,7 @@ import { navigateToPublicUrl } from "@/utils/globalUtils"
 import { Box, Theme, Typography, useMediaQuery } from "@mui/material"
 import Image from "next/image"
 import Link from "next/link"
-import { FacebookIcon, InstagramIcon, TwitterIcon } from "../../../../../public/images/svg/components"
+import { FacebookIcon } from "../../../../../public/images/svg/components"
 import { styles } from "./stylesFooterHome"
 
 export const FooterHome = () => {
