@@ -3,12 +3,21 @@ export const styles = {
     width: { xs: "100%", md: "100%" },
     height: { xs: "10%", md: "8%" },
     position: "fixed",
-    zIndex: 2,
+    zIndex: 4,
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: { xs: "3%", md: "2% 7%" },
-    backroundColor: "red"
+    padding: { xs: "3% 0", md: "2% 7%" },
+    maxWidth: "1900px",
+    backgroundColor: "secondary.main",
+    left: "0",
+    right: "0",
+    marginLeft: "auto",
+    marginRight: "auto",
+
+    '@media (min-width:2000px) ': {
+      padding: "2% 0%"
+    }
 
   },
   headerScroll: {
@@ -17,10 +26,18 @@ export const styles = {
     position: "fixed",
     zIndex: 2,
     display: "flex",
+    left: "0",
+    right: "0",
+    marginLeft: "auto",
+    marginRight: "auto",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: { xs: "3%", md: "2% 7%" },
+    padding: { xs: "3% 0", md: "2% 7%" },
     backgroundColor: "secondary.main",
+
+    '@media (min-width:2000px) ': {
+      padding: "2% 800px"
+    }
 
   },
   linksContainer: {
@@ -39,15 +56,18 @@ export const styles = {
   logoAjr: {
     width: { xs: "40%", md: "50%" },
     maxWidth: { xs: "100px", md: "250px", xl: "330px" },
-    mt:"3%",
+    mt: "3%",
   },
   logoAjrReduced: {
     width: { xs: "40%", md: "30%" },
     maxWidth: { xs: "100px", md: "150px", xl: "220px" },
-    padding:"1%"
+    padding: "1%",
+    "@media(min-width:2000px)": {
+      maxWidth: "330px"
+    }
   },
   button: {
-    ml: { md:"4%", xl:"3%"},
+    ml: { md: "4%", xl: "3%" },
     '&:hover': {
       backgroundColor: "primary.main",
       opacity: "0.8"

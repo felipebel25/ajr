@@ -7,7 +7,7 @@ import { FooterHome } from "../footer/FooterHome"
 export const HomeView = () => {
 
     return (
-        <Box sx={{ height: "100vh" }} >
+        <Box sx={{ height: "100vh", width:"100%" }} >
             <HeaderHome />
             <MainHome />
             <FooterHome />

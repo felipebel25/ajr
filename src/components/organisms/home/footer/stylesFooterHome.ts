@@ -1,10 +1,12 @@
-import { fonts } from "@/themes/fonts";
 
 export const styles = {
     main: {
         height: { xs: "auto", md: "28vh" },
         backgroundColor: 'secondary.dark',
-        padding: {xs:"7% 5%", md:"1% 5%"},
+        padding: { xs: "7% 5%", md: "1% 5%" },
+        '@media(min-width: 2000px)': {
+            padding: "1% 800px"
+        }
     },
     contactSection: {
         borderBottom: "0.5px solid #FFFFFF",
@@ -13,6 +15,7 @@ export const styles = {
         flexDirection: { xs: "column", md: "row" },
         justifyContent: { xs: "center", md: "" },
         alignItems: { xs: "center", md: "" },
+        pb:{xs:"2rem", md:"0"}
 
     },
     contactSectionImage: {
@@ -55,6 +58,8 @@ export const styles = {
         justifyContent: { xs: "center", md: "space-between" },
         alignItems: "center",
         flexDirection: { xs: "column-reverse", md: "row" },
+        pt:{xs:"2rem", md:"0"}
+
 
     },
     containerIconsSocialLinks: {
@@ -63,7 +68,7 @@ export const styles = {
         display: "flex",
         justifyContent: { xs: "center", md: "flex-end" },
         alignItems: "center",
-        m:{xs:"2% 0" , md:"0"}
+        m: { xs: "2% 0", md: "0" }
     },
     iconSocialLink: {
         width: { xs: "30%", md: "25%" },

@@ -5,11 +5,16 @@ export const styles = {
         backgroundColor: 'primary.main',
         width: "100%",
         height: { md: "50vh" },
-        padding: { xs:"5% 1%", md: "2% 5%" },
+        padding: { xs: "5% 1%", md: "2% 5%" },
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
         alignItems: "center",
         justifyContent: { xs: "center", md: "space-evenly" },
+        maxWidth: "1900px",
+        margin:"0   auto",
+        '@media (min-width:2000px) ': {
+            padding: "2% 0%"
+        }
     },
-    
+
 }

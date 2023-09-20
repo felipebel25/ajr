@@ -1,4 +1,4 @@
-import { BannerSection, EightSection, EleventhSection, FifthSection, FourthSection, NinthSection, Testimonials, SeventhSection, SixthSection, TenthSection, ThirdSection } from "@molecules"
+import { BannerSection, AboutUsHome, Testimonials, ScheduleAppointment, ExpertAccounting, ContactUs, EmailForm, OurEasyProcess, EmpowerBusiness, HereHowWeHelp } from "@molecules"
 
 export const MainHome = () => {
 
@@ -8,23 +8,23 @@ export const MainHome = () => {
       {/* -------------Testimonials -- Cards Reccomendations------ */}
       <Testimonials />
       {/* -------------Text-----------------------*/}
-      <ThirdSection />
+      <HereHowWeHelp />
       {/* -------------Image and Text------------  */}
-      <FourthSection />
+      <OurEasyProcess />
       {/* -------------Logos partners------------  */}
-      <FifthSection />
+      {/* <FifthSection /> */}
       {/* -------------Cards Services------------  */}
-      <SixthSection />
+      <EmpowerBusiness />
       {/* -------------Shedule-------------------  */}
-      <SeventhSection />
+      <ScheduleAppointment />
       {/* -------------aboutUs-------------------- */}
-      <EightSection />
+      <AboutUsHome />
       {/* -------------Text and Rectangular------- */}
-      <NinthSection />
+      <ExpertAccounting />
       {/* -------------Contact Us and Map--------- */}
-      <TenthSection />
+      <ContactUs />
       {/* -------------Email Form----------------- */}
-      <EleventhSection />
+      <EmailForm />
     </>
   )
 }

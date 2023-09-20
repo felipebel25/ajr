@@ -12,13 +12,13 @@ export const styles = {
         mixBlendMode: 'overlay',
         //   background: 'radial-gradient(circle, rgba(167,176,209,0.5284488795518207) 0%, rgba(87,94,118,0) 35%)',
         //    background: 'radial-gradient(circle, rgba(167,176,209,1) 0%, rgba(87,94,118,0) 15%)',
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
     },
     containerFirstSection: {
         height: "100%",
         width: "100%",
         // border: '1px solid red',
-        padding: "2% 7%",
+        padding: { xs: "2% 7%", lg: "1% 7%" },
         color: "white",
         display: "flex",
         minHeight: "450px",
@@ -27,8 +27,13 @@ export const styles = {
         justifyContent: { xs: "space-around", md: 'space-between' },
         textAlign: { xs: "left", md: "left" },
         pt: { xs: "22%", md: "2%" },
-        pb: { xs: '0' }
+        pb: { xs: '0' },
 
+        maxWidth: "1900px",
+        margin: "0 auto",
+        '@media (min-width:2000px) ': {
+            padding: "1% 0%"
+        }
     },
     containerTitles: {
         // border: '1px solid red',

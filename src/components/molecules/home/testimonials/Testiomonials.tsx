@@ -8,39 +8,38 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import { styles } from "./stylesTestimonials"
 const testimonials = [
     {
-        text: "I love that AJR Accounting took the time to learn about my business before presenting an insightful strategic plan. Thanks, AJR Accounting!",
-        author: "Lauren B.",
-        role: "Owner/Graphic Designer - Left Coast Creativity"
+        text: "I’ve been with AJR Accounting who has been doing our taxes. She is Professional & Patient, & Trustworthy. She can help with loans, notary & more. She makes you comfortable & keeps you updated with any changes...",
+        author: "Carmen Perez",
+        // role: "Owner/Graphic Designer - Left Coast Creativity"
     },
     {
-        text: "When our business was in trouble, we didn't know where to turn to for help. Fortunately, we'd heard about AJR Accounting. From our first meeting, I knew we  found the perfect firm.",
-        author: "Tony S., President.",
-        role: "TGS Plastic"
+        text: "Best service ever. Very professional family oriented Buisness. Very helpful I have never had a problem all my personal and Buisness transactions are right on point. Give them five stars all the way. Thank you for your services.",
+        author: "Yesenia Munoz",
+        // role: "TGS Plastic"
     },
     {
-        text: "At our first meeting, AJR Accounting exhibited trust and loyalty. As a result, I instantly felt at ease and confident that my business was in very capable hands.",
-        author: "Jodi W.",
-        role: "District Manager - Farmers Insurance"
+        text: "Best Place To Be For Personal And Business AJR LITERALLY DOES IT ALL",
+        author: "Lenny Muñoz",
+        // role: "District Manager - Farmers Insurance"
     },
     {
-        text: "Seeing as how my business requires weekly attention, AJR Accounting has exceeded my expectations in keeping my business organized so that I can focus my concentration on my own client's travel plans.",
-        author: "David R., Owner",
-        role: "Travel Agent"
+        text: "Great service, friendly  and very knowledgeable.",
+        author: "Tony Reyes",
+        // role: "Travel Agent"
     },
     {
-        text: "AJR Accounting has done an excellent job helping me revitalize my fledgling business and increase my cash flow.",
-        author: "Sharmisa T., Owner",
-        role: "Bell Rose Used Bookstore"
+        text: "The Best service, good professional environment and That's why I recommend this office.",
+        author: "Fabian Sarango",
+        // role: "Bell Rose Used Bookstore"
     },
     {
-        text: "Rola, of AJR Accounting, is always available for questions and goes out of her way to complete projects that help my business grow.",
-        author: "Alice T",
-        role: "Attorney"
+        text: "Great service. 🤗",
+        author: "Marines Munoz",
+        // role: "Attorney"
     },
 ]
 export const Testimonials = () => {
 
-    const isSmallScreen = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
     return (
         <Box component='main' sx={styles.main}>
             {/* {isSmallScreen ? */}
@@ -50,6 +49,7 @@ export const Testimonials = () => {
                     autoPlayInterval={3000}
                     animationDuration={1000}
                     responsive={responsive}
+                    
                     {...settings}
                 >
                         {testimonials.map((testimonial) => (
